@@ -1,9 +1,3 @@
-- name: Pull latest changes
-  run: git pull origin main
-
-- name: Push changes
-  run: git push origin main
-  
 name: Step 0 # Start Exercise
 
 on:
@@ -15,7 +9,6 @@ permissions:
   contents: write # Update Readme
   actions: write # Disable/enable workflows
   issues: write # Create issue and comment on issues
-
 
 env:
   STEP_1_FILE: ".github/steps/1-create-a-branch.md"
@@ -29,7 +22,6 @@ jobs:
     with:
       exercise-title: "Introduction to GitHub"
       intro-message: "If you are new to GitHub, you might find your fellow developers use ___**issues**___  to organize their work and collaborate. We will do the same! That's another lesson, but today, we will introduce you to the basics."
-
 
   post_next_step_content:
     name: Post next step content
@@ -68,3 +60,9 @@ jobs:
           gh workflow enable "Step 1"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pull latest changes before push
+        run: git pull --rebase origin main
+
+      - name: Push changes
+        run: git push origin main
