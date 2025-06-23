@@ -1,3 +1,9 @@
+- name: Pull latest changes
+  run: git pull origin main
+
+- name: Push changes
+  run: git push origin main
+  
 name: Step 0 # Start Exercise
 
 on:
