@@ -60,9 +60,3 @@ jobs:
           gh workflow enable "Step 1"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Pull latest changes before push
-        run: git pull --rebase origin main
-
-      - name: Push changes
-        run: git push origin main
