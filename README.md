@@ -12,6 +12,10 @@ Remember, it's self-paced so feel free to take a break! ☕️
 
 ---
 
+<<<<<<< HEAD
 &copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
 
 ФАЫЫФ
+=======
+&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)ПВПВАПВП
+>>>>>>> 1ed349b9c10ba8244a25bacdb5de6e6828e6a72a
